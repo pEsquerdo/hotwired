@@ -1,0 +1,13 @@
+<%= turbo_frame_tag library_book do %>
+  <div class="card card-body">
+    <div class="col">
+      <%= link_to library_book.title, library_book, 'data-turbo-frame': '_top' %>
+    </div>
+    <div class="col">
+      <%= library_book.status&.titleize %>
+    </div>
+    <div class="col">
+      <%= library_book.status_date %>
+    </div>
+  </div>
+<% end %>

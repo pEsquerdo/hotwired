@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @library_book.title %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @library_book.status %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @library_book.description %>
+</p>
+
+<p>
+  <strong>Status date:</strong>
+  <%= @library_book.status_date %>
+</p>
+
+<p>
+  <strong>Internal info:</strong>
+  <%= @library_book.internal_info %>
+</p>
+
+<%= link_to 'Edit', edit_library_book_path(@library_book) %> |
+<%= link_to 'Back', library_books_path %>
